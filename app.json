@@ -1,0 +1,36 @@
+{
+  "name": "my-gplinks-bypass-app",
+  "description": "My GPLinks Bypass App",
+  "repository": "https://github.com/Tobigod123/gplinks-bypass",
+  "keywords": ["gplinks", "bypass", "python"],
+  "env": {
+    "API_HASH": "your_telegram_api_hash",
+    "API_ID": "your_telegram_api_id",
+    "BOT_TOKEN": "your_telegram_bot_token",
+    "KEY": "value"  // Add any other necessary environment variables here
+  },
+  "addons": [],  // Add any Heroku add-ons if needed
+  "scripts": {
+    "postdeploy": "python script.py"  // Run the Python script after deploying
+  },
+  "formation": {
+    "web": {
+      "quantity": 1  // Number of web dynos to run
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"  // Use Heroku's official Python buildpack
+    }
+  ],
+  "environments": {
+    "test": {
+      "env": {
+        "API_HASH": "test_hash",
+        "API_ID": "test_id",
+        "BOT_TOKEN": "test_token",
+        "KEY": "test_value"  // Add any test environment variables here
+      }
+    }
+  }
+}
