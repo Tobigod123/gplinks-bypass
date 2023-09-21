@@ -6,8 +6,7 @@
   "env": {
     "API_HASH": "your_telegram_api_hash",
     "API_ID": "your_telegram_api_id",
-    "BOT_TOKEN": "your_telegram_bot_token",
-
+    "BOT_TOKEN": "your_telegram_bot_token"
   },
   "scripts": {
     "postdeploy": "python script.py"  
@@ -27,8 +26,7 @@
       "env": {
         "API_HASH": "test_hash",
         "API_ID": "test_id",
-        "BOT_TOKEN": "test_token",
-   
+        "BOT_TOKEN": "test_token"
       }
     }
   }
